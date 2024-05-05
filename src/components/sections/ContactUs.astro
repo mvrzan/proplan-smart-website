@@ -1,0 +1,68 @@
+---
+import Button from "./Button.astro";
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<section id="contact" class="pb-20">
+  <div class="mx-auto max-w-7xl w-full px-5 sm:px-8 md:px-14 lg:px-5">
+    <div
+      class="w-full relative py-8 md:py-10 px-6 md:px-8 rounded-2xl bg-gradient-to-tr from-gray-100 to-gray-200 dark:from-gray-900"
+    >
+      <div class="absolute right-0 top-0 h-full w-full flex justify-end">
+        <div class="w-28 h-28 overflow-auto flex rounded-xl relative blur-2xl">
+          <span
+            class="absolute w-16 h-16 -top-1 -right-1 bg-green-500 rounded-md rotate-45"
+          ></span>
+          <span
+            class="absolute w-16 h-16 -bottom-1 -right-1 bg-[#FCDC58] rounded-md rotate-45"
+          ></span>
+          <span
+            class="absolute w-16 h-16 -bottom-1 -left-1 bg-primary rounded-md rotate-45"
+          ></span>
+        </div>
+      </div>
+
+      <div class="absolute left-0 bottom-0 h-full w-full flex items-end">
+        <div class="w-28 h-28 overflow-auto flex rounded-xl relative blur-2xl">
+          <span
+            class="absolute w-16 h-16 -top-1 -right-1 bg-green-500 rounded-md rotate-45"
+          ></span>
+          <span
+            class="absolute w-16 h-16 -bottom-1 -right-1 bg-[#FCDC58] rounded-md rotate-45"
+          ></span>
+          <span
+            class="absolute w-16 h-16 -bottom-1 -left-1 bg-primary rounded-md rotate-45"
+          ></span>
+        </div>
+      </div>
+      <div class="mx-auto text-center max-w-xl md:max-w-2xl relative">
+        <h1
+          class="text-3xl/tight sm:text-4xl/tight md:text-5xl/tight
+          font-bold text-heading-1"
+        >
+          {t("contact.title1")}<span
+            class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600"
+            >{t("contact.title2")}</span
+          >
+          {t("contact.title3")}
+        </h1>
+        <p class="md:text-lg text-heading-3 pt-10">
+          {t("contact.description")}
+        </p>
+        <div class="mx-auto max-w-md sm:max-w-xl pt-10">
+          <Button
+            variant={"primary"}
+            onClick={() => {
+              console.log("clicked");
+            }}
+          >
+            <span class="text-white relative z-[5]"> {t("contact.email")}</span>
+          </Button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

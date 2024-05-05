@@ -1,0 +1,18 @@
+---
+import { languages } from "../i18n/ui";
+import { getLangFromUrl } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const allLanguages = Object.entries(languages).map(([lang]) => lang);
+---
+
+<div class="min-w-max flex items-center gap-x-3">
+  <form
+    action={`/${lang === allLanguages[0] ? allLanguages[1] : allLanguages[0]}`}
+  >
+    <button language-switcher>
+      {lang === "en" ? "🇬🇧" : "🇭🇷"}
+      <span class="sr-only">change language</span>
+    </button>
+  </form>
+</div>

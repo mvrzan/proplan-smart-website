@@ -1,0 +1,42 @@
+---
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+import ServiceCard from "../service-cards/ServiceCard.astro";
+import { services } from "../../utils/services";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+type ServicesProps = {
+  title: string;
+  description: string;
+  icon: string;
+};
+---
+
+<section id="services">
+  <div
+    class="mx-auto max-w-7xl w-full px-5 sm:px-8 md:px-14 lg:px-5 space-y-10 md:sapce-y-12"
+  >
+    <div class="text-center max-w-3xl mx-auto space-y-4">
+      <h1 class="text-heading-1 font-semibold text-2xl sm:text-3xl md:text-4xl">
+        {t("services.title")}
+      </h1>
+      <p class="md:text-lg text-heading-3">
+        {t("services.description")}
+      </p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+      {
+        services.map((service: ServicesProps, index) => {
+          return (
+            <ServiceCard
+              title={t(`services.service${index + 1}.title` as any)}
+              description={t(`services.service${index + 1}.description` as any)}
+              icon={service.icon}
+            />
+          );
+        })
+      }
+    </div>
+  </div>
+</section>
