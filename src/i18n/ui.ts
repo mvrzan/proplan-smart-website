@@ -21,6 +21,7 @@ export const ui = {
     "home.welcome2": "successful!",
     "home.intro":
       "Writing, implementing, and maintaining a successful EU project does not have to be difficult! Work with us to develop your idea into a project proposal that will be successful in the EU funding programmes.",
+    "home.email": "Send us an email",
     "numerical_stats.created_projects": "Created projects",
     "numerical_stats.projects": "Projects",
     "numerical_stats.successful_submissions": "Successful submissions",
@@ -82,6 +83,7 @@ export const ui = {
     "home.welcome2": "uspješniji!",
     "home.intro":
       "Pisanje, implementacija i održavanje uspješnog EU projekta ne mora biti teško! Radite s nama kako biste razvili svoju ideju u prijedlog projekta koji će biti uspješan u programima financiranja EU-e.",
+    "home.email": "Pošaljite nam e-mail",
     "numerical_stats.created_projects": "Kreiranih projekata",
     "numerical_stats.projects": "Projekta",
     "numerical_stats.successful_submissions": "Uspješnih prijava",
