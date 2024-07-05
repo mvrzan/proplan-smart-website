@@ -39,14 +39,14 @@ const t = useTranslations(lang);
       <div class="md:text-lg text-heading-3 mt-8">
         {t("home.intro")}
       </div>
-      <div class="mt-10 w-full flex max-w-md mx-auto lg:mx-0">
+      <div class="mt-10 flex max-w-md mx-auto lg:mx-0">
         <div class="flex sm:flex-row flex-col gap-5 w-full">
           <form
             action="#"
-            class="py-1 pl-6 w-full pr-1 flex gap-3 items-center text-heading-3 shadow-lg shadow-box-shadow
+            class="py-1 pl-6 pr-1 flex gap-3 items-center text-heading-3 shadow-lg shadow-box-shadow
                       border border-box-border bg-box-bg rounded-full ease-linear focus-within:bg-body focus-within:border-primary"
           >
-            <span class="min-w-max pr-2 border-r border-box-border">
+            <span class="min-w-max pr-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -63,31 +63,8 @@ const t = useTranslations(lang);
                 ></path>
               </svg>
             </span>
-            <input
-              type="email"
-              name="email-input"
-              id="email-input"
-              placeholder="johndoe@gmail.com"
-              class="w-full py-3 outline-none bg-transparent"
-            />
             <Button variant={"primary"} className={"min-w-max text-white"}>
-              <span class="hidden sm:flex relative z-[5]"> Email us</span>
-              <span class="flex sm:hidden relative z-[5]">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-5 h-5"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"
-                  ></path>
-                </svg>
-              </span>
+              <span class="">{t("home.email")}</span>
             </Button>
           </form>
         </div>
