@@ -68,6 +68,7 @@ export const ui = {
     "footer.company.contact": "Contact",
     "footer.social": "Social",
     "footer.description": "The best EU project writing agency out there!",
+    "layout.description": "EU Project Writing Agency",
   },
   hr_HR: {
     "url.home": "pocetna",
@@ -131,5 +132,6 @@ export const ui = {
     "footer.company.contact": "Kontakt",
     "footer.social": "Društvene mreže",
     "footer.description": "Najbolja agencija za pisanje EU projekata!",
+    "layout.description": "Agencija za pisanje EU projekata",
   },
 } as const;
