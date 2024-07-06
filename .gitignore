@@ -56,3 +56,6 @@ typings/
 
 # Mac files
 .DS_Store
+
+# Build files
+dist
