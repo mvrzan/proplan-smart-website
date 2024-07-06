@@ -18,9 +18,41 @@ const t = useTranslations(lang);
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- HTML Meta Tags -->
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content=`ProPlan - ${t("layout.description")}` />
     <title>ProPlan SMART - {title}</title>
+
+    <!-- Facebook Meta Tags -->
+    <meta
+      property="og:url"
+      content="https://42e5-38-64-221-27.ngrok-free.app"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content=`ProPlan SMART` />
+    <meta
+      property="og:description"
+      content=`ProPlan - ${t("layout.description")}`
+    />
+    <meta property="og:image" content="/initial.jpg" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:domain"
+      content="42e5-38-64-221-27.ngrok-free.app"
+    />
+    <meta
+      property="twitter:url"
+      content="https://42e5-38-64-221-27.ngrok-free.app"
+    />
+    <meta name="twitter:title" content=`ProPlan SMART` />
+    <meta
+      name="twitter:description"
+      content=`ProPlan - ${t("layout.description")}`
+    />
+    <meta name="twitter:image" content="/initial.jpg" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
