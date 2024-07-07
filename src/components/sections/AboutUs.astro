@@ -45,7 +45,7 @@ const t = useTranslations(lang);
         {t("about.description")}
       </p>
       <div class="pt-8 grid sm:grid-cols-1 lg:grid-cols-2 gap-4">
-        <Info description={t("about.mission")} title="Mission">
+        <Info description={t("about.mission")} title={t("about.title1")}>
           <span slot="icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +64,7 @@ const t = useTranslations(lang);
             </svg>
           </span>
         </Info>
-        <Info description={t("about.vision")} title="Vision">
+        <Info description={t("about.vision")} title={t("about.title2")}>
           <span slot="icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"

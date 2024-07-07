@@ -54,6 +54,8 @@ export const ui = {
       "Our mission is to empower organizations by providing expert guidance and tailored solutions in navigating the complexities of EU projects, ensuring their successful conception, funding, and implementation.",
     "about.vision":
       "Our vision is to lead organizations and individuals towards EU project excellence, providing innovative solutions aligned with European priorities for impactful and sustainable advancements.",
+    "about.title1": "Mission",
+    "about.title2": "Vision",
     "contact.title1": "Quick start your ",
     "contact.title2": "EU project",
     "contact.title3": "today!",
@@ -118,6 +120,8 @@ export const ui = {
       "Naša misija je pružiti stručno vođenje, rješenja i vodstvo organizacijama u ostvarivanju ciljeva kroz učinkovito sudjelovanje u EU projektima, potičući inovacije i osiguravajući održivi društveni razvoj.",
     "about.vision":
       "Vizija naše tvrtke za pisanje EU projekata je postati stručni partner u poticanju inovacija, održivosti i društvenog napretka kroz stručno oblikovanje prijedloga usklađenih s europskim ciljevima.",
+    "about.title1": "Misija",
+    "about.title2": "Vizija",
     "contact.title1": "Brzo pokrenite ",
     "contact.title2": "Vaš EU projekt",
     "contact.title3": "već danas!",
