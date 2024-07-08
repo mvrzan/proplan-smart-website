@@ -1,41 +1,42 @@
 ---
 import { Image } from "astro:assets";
-import { languages } from "../i18n/ui";
 import { getLangFromUrl } from "../i18n/utils";
 import croFlag from "../../src/svg/hr.svg";
 import engFlag from "../../src/svg/en.svg";
 
 const lang = getLangFromUrl(Astro.url);
-const allLanguages = Object.entries(languages).map(([lang]) => lang);
 ---
 
 <div class="min-w-max flex items-center gap-x-3">
-  <form
-    action={`/${lang === allLanguages[0] ? allLanguages[1] : allLanguages[0]}`}
+  <button
+    language-switcher
+    onclick={`(() => {
+      const currentLang = '${lang}';
+      let newPath = currentLang === 'hr_HR' ? '/en' : '/';
+      window.location.href = newPath;
+    })()`}
   >
-    <button language-switcher>
-      {
-        lang === "en" ? (
-          <Image
-            src={croFlag}
-            alt="croFlag"
-            loading="eager"
-            width="20"
-            height="24"
-            class=" left-1/2 -translate-x-1/2  bottom-0 max-h-full"
-          />
-        ) : (
-          <Image
-            src={engFlag}
-            alt="engFlag"
-            loading="eager"
-            width="20"
-            height="24"
-            class="left-1/2 -translate-x-1/2  bottom-0 max-h-full"
-          />
-        )
-      }
-      <span class="sr-only">change language</span>
-    </button>
-  </form>
+    {
+      lang === "en" ? (
+        <Image
+          src={croFlag}
+          alt="croFlag"
+          loading="eager"
+          width="20"
+          height="24"
+          class=" left-1/2 -translate-x-1/2  bottom-0 max-h-full"
+        />
+      ) : (
+        <Image
+          src={engFlag}
+          alt="engFlag"
+          loading="eager"
+          width="20"
+          height="24"
+          class="left-1/2 -translate-x-1/2  bottom-0 max-h-full"
+        />
+      )
+    }
+    <span class="sr-only">change language</span>
+  </button>
 </div>
