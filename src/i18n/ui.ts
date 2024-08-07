@@ -21,6 +21,8 @@ export const ui = {
     "home.welcome2": "successful!",
     "home.intro":
       "Writing, implementing, and maintaining a successful EU project does not have to be difficult! Work with us to develop your idea into a project proposal that will be successful in the EU funding programmes.",
+    "home.intro2":
+      "We also offer consulting services for establishing and managing associations, writing Statutes of associations and business plans.",
     "home.email": "Send us an email",
     "numerical_stats.created_projects": "Created and implemented projects",
     "numerical_stats.business_plans": "Written business plans",
@@ -87,6 +89,8 @@ export const ui = {
     "home.welcome2": "uspješniji!",
     "home.intro":
       "Pisanje, implementacija i održavanje uspješnog EU projekta ne mora biti teško! Radite s nama kako biste razvili svoju ideju u prijedlog projekta koji će biti uspješan u programima financiranja EU-e.",
+    "home.intro2":
+      "Također nudimo i usluge savjetovanja oko osnivanja i vođenja udruga, pisanje Statuta udruga i poslovnih planova.",
     "home.email": "Pošaljite nam e-mail",
     "numerical_stats.created_projects": "Kreiranih i provedenih projekata",
     "numerical_stats.business_plans": "Napisanih poslovnih planova",
