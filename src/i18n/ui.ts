@@ -51,11 +51,11 @@ export const ui = {
       "Project administration for EU projects involves overseeing day-to-day activities, managing documentation in compliance with EU regulations, and ensuring effective communication among project stakeholders. Efficient project administration is essential for maintaining transparency, accountability, and successful coordination throughout the project lifecycle.",
     "about.title": "We help drive your business forward faster",
     "about.description":
-      "As a specialized EU project writing business, we bring expertise in crafting compelling project proposals that align with the priorities and regulations of the European Union. Our dedicated team excels in meticulous planning, effective stakeholder collaboration, and adherence to EU standards, ensuring our clients' projects stand out for funding opportunities and successful implementation within the EU framework.",
+      "As a specialized business entity for writing EU projects, we bring expertise in crafting high-quality project proposals aligned with European priorities and regulations. Establishing and managing an association requires in-depth knowledge of laws and regulations, but it doesn't have to be difficult. Turn to our experienced team to provide you with their years of experience and help at every step.",
     "about.mission":
-      "Our mission is to empower organizations by providing expert guidance and tailored solutions in navigating the complexities of EU projects, ensuring their successful conception, funding, and implementation.",
+      "Our mission is to provide expert guidance, business solutions, and leadership to organizations in achieving their goals, fostering innovation, and ensuring sustainable social development.",
     "about.vision":
-      "Our vision is to lead organizations and individuals towards EU project excellence, providing innovative solutions aligned with European priorities for impactful and sustainable advancements.",
+      "Our company's vision is to promote innovation, sustainability, and social progress through expert guidance and consulting aligned with European objectives.",
     "about.title1": "Mission",
     "about.title2": "Vision",
     "contact.title1": "Quick start your ",
@@ -119,11 +119,11 @@ export const ui = {
       "Upravljanje projektom za EU projekte uključuje nadzor nad svakodnevnim aktivnostima, upravljanje dokumentacijom u skladu s propisima EU te osiguranje učinkovite komunikacije među dionicima projekta. Učinkovita administracija projekta ključna je za održavanje transparentnosti, odgovornosti i uspješne koordinacije tijekom cijelog životnog ciklusa projekta.",
     "about.title": "Pomažemo ubrzati razvoj Vašeg poslovanja",
     "about.description":
-      "Kao specijalizirani poslovni subjekt za pisanje EU projekata, donosimo stručnost u izradi uvjerljivih prijedloga projekata koji se usklađuju s prioritetima i propisima Europske unije. Naš posvećeni tim izvrsno se snalazi u preciznom planiranju, učinkovitoj suradnji s dionicima i pridržavanju EU standarda, osiguravajući da projekti naših klijenata istaknu za mogućnosti financiranja i uspješnu provedbu unutar okvira EU.",
+      "Kao specijalizirani poslovni subjekt za pisanje EU projekata, donosimo stručnost u izradi kvalitetnih prijedloga projekata u skladu s prioritetima i propisima Europske unije. Osnivanje i vođenje udruge zahtjeva opširno poznavanje zakona i pravila, no ne mora biti teško. Obratite se našem iskusnom timu koji ce vam prużiti svoje dugogodišnje iskustvo i pomoći na svakom koraku.",
     "about.mission":
-      "Naša misija je pružiti stručno vođenje, rješenja i vodstvo organizacijama u ostvarivanju ciljeva kroz učinkovito sudjelovanje u EU projektima, potičući inovacije i osiguravajući održivi društveni razvoj.",
+      "Naša misija je pružiti stručno vođenje, poslovna rješenja i vodstvo organizacijama u ostvarivanju ciljeva, potičući inovacije i osiguravajući održivi društveni razvoj.",
     "about.vision":
-      "Vizija naše tvrtke za pisanje EU projekata je postati stručni partner u poticanju inovacija, održivosti i društvenog napretka kroz stručno oblikovanje prijedloga usklađenih s europskim ciljevima.",
+      "Vizija naše tvrtke je poticanje inovacija, održivosti i društvenog napretka kroz stručno vođenje i savjetovanje usklađeno s europskim ciljevima.",
     "about.title1": "Misija",
     "about.title2": "Vizija",
     "contact.title1": "Brzo pokrenite ",
