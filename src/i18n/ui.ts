@@ -22,9 +22,9 @@ export const ui = {
     "home.intro":
       "Writing, implementing, and maintaining a successful EU project does not have to be difficult! Work with us to develop your idea into a project proposal that will be successful in the EU funding programmes.",
     "home.email": "Send us an email",
-    "numerical_stats.created_projects": "Created projects",
+    "numerical_stats.created_projects": "Created and implemented projects",
     "numerical_stats.business_plans": "Written business plans",
-    "numerical_stats.successful_submissions": "Approved submissions",
+    "numerical_stats.successful_submissions": "Approved business plans",
     "numerical_stats.total_project_value": "Total project value",
     "services.title": "Our services",
     "services.description":
@@ -88,9 +88,9 @@ export const ui = {
     "home.intro":
       "Pisanje, implementacija i održavanje uspješnog EU projekta ne mora biti teško! Radite s nama kako biste razvili svoju ideju u prijedlog projekta koji će biti uspješan u programima financiranja EU-e.",
     "home.email": "Pošaljite nam e-mail",
-    "numerical_stats.created_projects": "Kreiranih projekata",
+    "numerical_stats.created_projects": "Kreiranih i provedenih projekata",
     "numerical_stats.business_plans": "Napisanih poslovnih planova",
-    "numerical_stats.successful_submissions": "Odobrenih prijava",
+    "numerical_stats.successful_submissions": "Odobrenih poslovnih planova",
     "numerical_stats.total_project_value": "Ukupna vrijednost projekata",
     "services.title": "Naše usluge",
     "services.description":
