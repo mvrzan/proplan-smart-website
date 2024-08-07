@@ -62,7 +62,7 @@ export const ui = {
     "contact.title2": "EU project",
     "contact.title3": "today!",
     "contact.description":
-      "Reach out to us for personalized consultations on EU projects. We stand ready to assist you in navigating the complexities, offering tailored solutions that align with your organization's goals and EU project requirements.Send us an email to get started",
+      "Contact us for personalized consultations on EU projects. We are ready to help you navigate the complexities, offering solutions tailored to your goals and EU project requirements. Send us an email to get started.",
     "contact.email": "Send us an email",
     "footer.company": "Company",
     "footer.company.home": "Home",
@@ -130,7 +130,7 @@ export const ui = {
     "contact.title2": "Vaš EU projekt",
     "contact.title3": "već danas!",
     "contact.description":
-      "Obratite nam se za personalizirane konzultacije o EU projektima. Spremni smo pomoći vam u snalaženju u kompleksnostima, nudeći rješenja prilagođena vašim ciljevima i zahtjevima EU projekata. Pošaljite nam e-mail kako biste započeli",
+      "Obratite nam se za personalizirane konzultacije o EU projektima. Spremni smo vam pomoći u snalaženju s kompleksnostima, nudeći rješenja prilagođena vašim ciljevima i zahtjevima EU projekata. Pošaljite nam e-mail kako biste započeli.",
     "contact.email": "Pošaljite nam e-mail",
     "footer.company": "Tvrtka",
     "footer.company.home": "Početna",
