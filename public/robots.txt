@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://proplansmart.hr/sitemap-index.xml
