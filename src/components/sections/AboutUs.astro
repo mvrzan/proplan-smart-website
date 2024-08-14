@@ -1,5 +1,5 @@
 ---
-import { Image } from "astro:assets";
+import { Picture } from "astro:assets";
 import Info from "../service-cards/Info.astro";
 import { getLangFromUrl, useTranslations } from "../../i18n/utils";
 
@@ -27,8 +27,9 @@ const t = useTranslations(lang);
         <span
           class="absolute w-full aspect-[16/5] -skew-x-12 rounded-full bg-gradient-to-tr from-primary to-green-400 opacity-40 blur-2xl left-0 bottom-0"
         ></span>
-        <Image
-          src="/project-planning.jpg"
+        <Picture
+          src="/project-planning.webp"
+          fallbackFormat="/project-planning.jpg"
           alt="owner"
           loading="eager"
           width="1000"

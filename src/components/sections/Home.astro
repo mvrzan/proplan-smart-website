@@ -1,6 +1,6 @@
 ---
 import Button from "./Button.astro";
-import { Image } from "astro:assets";
+import { Picture } from "astro:assets";
 import NumericalStats from "./NumericalStats.astro";
 import { getLangFromUrl, useTranslations } from "../../i18n/utils";
 
@@ -75,8 +75,9 @@ const t = useTranslations(lang);
     <div
       class="flex flex-1 lg:w-1/2 lg:h-auto relative lg:max-w-none lg:mx-0 mx-auto max-w-3xl"
     >
-      <Image
-        src="/initial.jpg"
+      <Picture
+        src="/initial.webp"
+        fallbackFormat="/initial.jpg"
         alt="landing"
         width="1000"
         height="1000"
