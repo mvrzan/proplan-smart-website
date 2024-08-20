@@ -3,6 +3,7 @@ import Button from "./Button.astro";
 import { Picture } from "astro:assets";
 import NumericalStats from "./NumericalStats.astro";
 import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+import initialImg from "../../../public/initial.jpg";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -76,7 +77,9 @@ const t = useTranslations(lang);
       class="flex flex-1 lg:w-1/2 lg:h-auto relative lg:max-w-none lg:mx-0 mx-auto max-w-3xl"
     >
       <Picture
-        src="/initial.webp"
+        src={initialImg}
+        widths={[260, 596, 768, 940, initialImg.width]}
+        sizes="(min-width: 1360px) 596px, (min-width: 1040px) calc(40vw + 60px), (min-width: 960px) 768px, (min-width: 780px) calc(62.5vw + 181px), calc(94.78vw - 24px)"
         fallbackFormat="/initial.jpg"
         alt="landing"
         width="1000"
