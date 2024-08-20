@@ -2,6 +2,7 @@
 import { Picture } from "astro:assets";
 import Info from "../service-cards/Info.astro";
 import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+import projectPlanningImg from "../../../public/project-planning.jpg";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -28,7 +29,9 @@ const t = useTranslations(lang);
           class="absolute w-full aspect-[16/5] -skew-x-12 rounded-full bg-gradient-to-tr from-primary to-green-400 opacity-40 blur-2xl left-0 bottom-0"
         ></span>
         <Picture
-          src="/project-planning.webp"
+          src={projectPlanningImg}
+          widths={[260, 592, 940, projectPlanningImg.width]}
+          sizes="(min-width: 1340px) 592px, (min-width: 880px) calc(51.82vw - 92px), (min-width: 780px) calc(100vw - 112px), calc(94.78vw - 24px)"
           fallbackFormat="/project-planning.jpg"
           alt="owner"
           loading="eager"
