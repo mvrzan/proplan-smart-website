@@ -1,4 +1,8 @@
-# Astro Starter Kit: Basics
+<a  href="https://astro.build/">
+<img  src="https://astro.js.org/astro.png"  alt="Salesforce"  width="250"  />
+</a>
+
+# ProPlan SMART website built with Astro.js and Tailwind
 
 ```sh
 npm create astro@latest -- --template basics
