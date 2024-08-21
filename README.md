@@ -1,6 +1,14 @@
+<br />
 <a  href="https://astro.build/">
+<div align="center">
 <img  src="https://astro.js.org/astro.png"  alt="Salesforce"  width="250"  />
 </a>
+</div>
+<br />
+<div align="center">
+  ⚡️ ProPlan SMART website built with Astro.js and Tailwind ⚡️
+</div>
+<br />
 
 # ProPlan SMART website built with Astro.js and Tailwind
 
