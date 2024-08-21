@@ -66,19 +66,21 @@ const t = useTranslations(lang);
     <Footer />
   </body>
   <script>
-    const toggleTheme = document.querySelector("[data-switch-theme]");
-    const html = document.querySelector("html");
-    const theme = localStorage.getItem("theme");
+    const toggleTheme = document.querySelector(
+      "[data-switch-theme]"
+    ) as HTMLButtonElement;
+    const html = document.querySelector("html") as HTMLHtmlElement;
+    const theme = localStorage.getItem("theme") as string;
 
-    theme ? html?.classList.add(theme) : html?.classList.add("dark");
+    theme ? html.classList.add(theme) : html.classList.add("dark");
 
     if (toggleTheme) {
       toggleTheme.addEventListener("click", () => {
-        if (html?.classList.contains("dark")) {
-          html?.classList.remove("dark");
+        if (html.classList.contains("dark")) {
+          html.classList.remove("dark");
           localStorage.setItem("theme", "light");
         } else {
-          html?.classList.add("dark");
+          html.classList.add("dark");
           localStorage.setItem("theme", "dark");
         }
       });
@@ -92,35 +94,28 @@ const t = useTranslations(lang);
     const overlayNav = document.querySelector(
       "[data-nav-overlay]"
     ) as HTMLDivElement;
+
     if (toggleMenu) {
-      toggleMenu.addEventListener("click", (e) => {
-        e.preventDefault();
+      const closeNav = () => {
+        toggleMenu.setAttribute("data-open-nav", "false");
+        overlayNav.setAttribute("data-is-visible", "false");
+        document.body.classList.remove("!overflow-y-hidden");
+        navbar.style.height = "0px";
+      };
+
+      toggleMenu.addEventListener("click", () => {
         if (toggleMenu.getAttribute("data-open-nav") === "false") {
           toggleMenu.setAttribute("data-open-nav", "true");
           overlayNav.setAttribute("data-is-visible", "true");
           document.body.classList.add("!overflow-y-hidden");
           navbar.style.height = `${navbar.scrollHeight}px`;
         } else {
-          toggleMenu.setAttribute("data-open-nav", "false");
-          overlayNav.setAttribute("data-is-visible", "false");
-          document.body.classList.remove("!overflow-y-hidden");
-          navbar.style.height = "0px";
+          closeNav();
         }
       });
 
-      navbar.addEventListener("click", () => {
-        toggleMenu.setAttribute("data-open-nav", "false");
-        overlayNav.setAttribute("data-is-visible", "false");
-        document.body.classList.remove("!overflow-y-hidden");
-        navbar.style.height = "0px";
-      });
-
-      overlayNav.addEventListener("click", () => {
-        toggleMenu.setAttribute("data-open-nav", "false");
-        overlayNav.setAttribute("data-is-visible", "false");
-        document.body.classList.remove("!overflow-y-hidden");
-        navbar.style.height = "0px";
-      });
+      navbar.addEventListener("click", closeNav);
+      overlayNav.addEventListener("click", closeNav);
     }
   </script>
 </html>
