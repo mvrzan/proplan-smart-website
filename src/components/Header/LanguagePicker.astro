@@ -8,35 +8,17 @@ const lang = getLangFromUrl(Astro.url);
 ---
 
 <div class="min-w-max flex items-center gap-x-3">
-  <button
-    language-switcher
-    onclick={`(() => {
-      const currentLang = '${lang}';
-      let newPath = currentLang === 'hr_HR' ? '/en' : '/';
-      window.location.href = newPath;
-    })()`}
-  >
-    {
-      lang === "en" ? (
-        <Image
-          src={croFlag}
-          alt="croFlag"
-          loading="eager"
-          width="20"
-          height="24"
-          class=" left-1/2 -translate-x-1/2  bottom-0 max-h-full"
-        />
-      ) : (
-        <Image
-          src={engFlag}
-          alt="engFlag"
-          loading="eager"
-          width="20"
-          height="24"
-          class="left-1/2 -translate-x-1/2  bottom-0 max-h-full"
-        />
-      )
-    }
+  <button language-switcher>
+    <a href={lang === "en" ? "/" : "/en"}>
+      <Image
+        src={lang === "en" ? engFlag : croFlag}
+        alt={lang === "en" ? "engFlag" : "croFlag"}
+        loading="eager"
+        width="20"
+        height="24"
+        class="left-1/2 -translate-x-1/2 bottom-0 max-h-full"
+      />
+    </a>
     <span class="sr-only">change language</span>
   </button>
 </div>
