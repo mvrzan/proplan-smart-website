@@ -1,8 +1,8 @@
 ---
 import { Image } from "astro:assets";
-import { getLangFromUrl, useTranslations } from "../../i18n/utils";
 import Navitem from "./Navitem.astro";
 import LanguagePicker from "./LanguagePicker.astro";
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -58,11 +58,7 @@ const navItems = [
         <ul
           class="border-y rounded-md border-box-border lg:border-t-0 px-6 lg:px-0 p-6 lg:pt-0 flex flex-col lg:flex-row gap-y-4 gap-x-3 text-lg text-heading-2 w-full lg:justify-center lg:items-center absolute"
         >
-          {
-            navItems.map((item) => {
-              return <Navitem {...item} />;
-            })
-          }
+          {navItems.map((item) => <Navitem {...item} />)}
         </ul>
       </div>
 
