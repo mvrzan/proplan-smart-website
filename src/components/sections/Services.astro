@@ -27,15 +27,13 @@ type ServicesProps = {
     </div>
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
       {
-        services.map((service: ServicesProps, index) => {
-          return (
-            <ServiceCard
-              title={t(`services.service${index + 1}.title` as any)}
-              description={t(`services.service${index + 1}.description` as any)}
-              icon={service.icon}
-            />
-          );
-        })
+        services.map((service: ServicesProps, index) => (
+          <ServiceCard
+            title={t(`services.service${index + 1}.title` as any)}
+            description={t(`services.service${index + 1}.description` as any)}
+            icon={service.icon}
+          />
+        ))
       }
     </div>
   </div>
