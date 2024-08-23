@@ -1,8 +1,8 @@
 ---
 import { Image } from "astro:assets";
-import { getLangFromUrl, useTranslations } from "../i18n/utils";
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
 import Navitem from "./Navitem.astro";
-import LanguagePicker from "./LanguagePicker.astro";
+import LanguagePicker from "../LanguagePicker.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
