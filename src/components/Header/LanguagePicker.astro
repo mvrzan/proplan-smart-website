@@ -11,8 +11,8 @@ const lang = getLangFromUrl(Astro.url);
   <button language-switcher>
     <a href={lang === "en" ? "/" : "/en"}>
       <Image
-        src={lang === "en" ? engFlag : croFlag}
-        alt={lang === "en" ? "engFlag" : "croFlag"}
+        src={lang === "en" ? croFlag : engFlag}
+        alt={lang === "en" ? "croFlag" : "engFlag"}
         loading="eager"
         width="20"
         height="24"
