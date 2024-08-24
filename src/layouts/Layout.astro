@@ -41,6 +41,20 @@ const t = useTranslations(lang);
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" as="style" />
+    <script is:inline>
+      const currentTheme = localStorage.getItem("theme");
+      switch (currentTheme) {
+        case "light":
+          document.querySelector("html").classList.add(currentTheme);
+          break;
+        case "dark":
+          document.querySelector("html").classList.add(currentTheme);
+          break;
+        default:
+          document.querySelector("html").classList.add("dark");
+          break;
+      }
+    </script>
   </head>
   <body class="overflow-hidden overflow-y-auto bg-body">
     <Header />
@@ -50,16 +64,15 @@ const t = useTranslations(lang);
   <script>
     const toggleTheme = document.querySelector("[data-switch-theme]") as HTMLButtonElement;
     const html = document.querySelector("html") as HTMLHtmlElement;
-    const theme = localStorage.getItem("theme") as string;
-
-    theme ? html.classList.add(theme) : html.classList.add("dark");
 
     if (toggleTheme) {
       toggleTheme.addEventListener("click", () => {
         if (html.classList.contains("dark")) {
           html.classList.remove("dark");
+          html.classList.add("light");
           localStorage.setItem("theme", "light");
         } else {
+          html.classList.remove("light");
           html.classList.add("dark");
           localStorage.setItem("theme", "dark");
         }
