@@ -15,7 +15,7 @@ export default {
         "heading-3": "rgb(var(--heading-3))",
       },
       fontFamily: {
-        raleway: ['"Raleway"', "sans-serif"],
+        raleway: ["Raleway", "sans-serif"],
       },
       screens: {
         midmd: "880px",
