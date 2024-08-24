@@ -13,7 +13,7 @@ const t = useTranslations(lang);
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -56,7 +56,7 @@ const t = useTranslations(lang);
       }
     </script>
   </head>
-  <body class="overflow-hidden overflow-y-auto bg-body">
+  <body class="overflow-hidden overflow-y-auto bg-body font-raleway">
     <Header />
     <slot />
     <Footer />
@@ -129,13 +129,6 @@ const t = useTranslations(lang);
     --heading-1: 255 255 255;
     --heading-2: 243 244 246;
     --heading-3: 209 213 219;
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
-  body {
-    font-family: "Raleway", sans-serif;
   }
 
   [data-toggle-nav][data-open-nav="true"] #line1 {
