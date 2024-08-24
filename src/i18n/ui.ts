@@ -29,8 +29,7 @@ export const ui = {
     "numerical_stats.successful_submissions": "Approved business plans",
     "numerical_stats.total_project_value": "Total project value",
     "services.title": "Our services",
-    "services.description":
-      "We offer a wide range of services in the field of EU project development and management.",
+    "services.description": "We offer a wide range of services in the field of EU project development and management.",
     "services.service1.title": "Project planning",
     "services.service2.title": "Writing the project proposal",
     "services.service3.title": "Project management",
@@ -97,8 +96,7 @@ export const ui = {
     "numerical_stats.successful_submissions": "Odobrenih poslovnih planova",
     "numerical_stats.total_project_value": "Ukupna vrijednost projekata",
     "services.title": "Naše usluge",
-    "services.description":
-      "Nudimo širok spektar usluga u području razvoja i upravljanja EU projektima.",
+    "services.description": "Nudimo širok spektar usluga u području razvoja i upravljanja EU projektima.",
     "services.service1.title": "Planiranje projekta",
     "services.service2.title": "Pisanje projektnog plana",
     "services.service3.title": "Upravljanje projektom",
