@@ -37,8 +37,6 @@ An Astro.js website build with Tailwind for the [ProPlan SMART](https://proplans
 | -------------------------------------------------------- | -------------------------------------------------------- |
 | <img width="100%" src="./screenshots/mobile-page1.png"/> | <img width="100%" src="./screenshots/mobile-page2.png"/> |
 
-![](./screenshots/website-demo.gif)
-
 ## Technologies used
 
 - [Astro.js](https://docs.astro.build/en/getting-started/)
