@@ -48,9 +48,21 @@ There's nothing special about `src/components/`, but that's where we like to put
 
 Any static assets, like images, can be placed in the `public/` directory.
 
-## 🧞 Commands
+# Configuration
 
-All commands are run from the root of the project, from a terminal:
+## Requirements
+
+To run this application locally you will need the following:
+
+- Node.js version 20 or later installed (type `node -v` in your terminal to check). Follow [instructions](https://nodejs.org/en/download) if you don't have node installed
+- `npm` version 10.0.0 or later installed (type `npm -v` in your terminal to check). Node.js includes `npm` by default
+- `git` installed. Follow the instructions to [install git](https://git-scm.com/downloads)
+
+## Setup
+
+## Deployment
+
+To get the project up and running locally, the first step is to download or clone this GitHub repository. Once done, run the following co
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
