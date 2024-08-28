@@ -48,6 +48,14 @@ There's nothing special about `src/components/`, but that's where we like to put
 
 Any static assets, like images, can be placed in the `public/` directory.
 
+## Technologies used
+
+- [Astro.js](https://docs.astro.build/en/getting-started/)
+- [Tailwind](https://tailwindcss.com)
+- [Typescript](https://www.typescriptlang.org)
+
+  For a more detailed overview of the development & production dependencies, please check `package.json` file.
+
 # Configuration
 
 ## Requirements
@@ -79,17 +87,12 @@ This will run the development server locally and your website will be available 
 
 ## Deployment
 
-To get the project up and running locally, the first step is to download or clone this GitHub repository. Once done, run the following co
+NOTE: This project is currently live and deployed at [proplansmart.hr](https://proplansmart.hr). Deployment instructions are for educational purpose only.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Once you are happy with changes you've made, run the following command in your terminal window:
 
-## 👀 Want to learn more?
+```
+npm run build
+```
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+This will build your production site to `./dist/` folder. The next step is for you to deploy this folder to the hosting provider of your choice.
