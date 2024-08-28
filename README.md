@@ -96,3 +96,7 @@ npm run build
 ```
 
 This will build your production site to `./dist/` folder. The next step is for you to deploy this folder to the hosting provider of your choice.
+
+# Kudos
+
+This project was inspired by the free [Agencex Astro](https://astro.build/themes/details/agencex/) theme template made by [Johnkat Mj](https://github.com/Johnkat-Mj).
