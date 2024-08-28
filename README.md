@@ -60,6 +60,23 @@ To run this application locally you will need the following:
 
 ## Setup
 
+The first step is to clone (or download) the repository and install the project dependencies via a terminal interface by running the `npm install` in the proper folder:
+
+```
+cd proplan-smart-website
+npm install
+```
+
+## Development
+
+To run the application locally, use the command line, navigate to the folder, ensure the dependencies are installed properly, and run the following:
+
+```
+npm run dev
+```
+
+This will run the development server locally and your website will be available on the following URL: `http://localhost:4321/`
+
 ## Deployment
 
 To get the project up and running locally, the first step is to download or clone this GitHub repository. Once done, run the following co
