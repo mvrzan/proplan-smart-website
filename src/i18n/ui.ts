@@ -71,7 +71,9 @@ export const ui = {
     "footer.company.contact": "Contact",
     "footer.social": "Social",
     "footer.description": "The best EU project writing agency out there!",
-    "layout.description": "EU Project Writing Agency",
+  "layout.siteTitle": "ProPlan SMART",
+  "layout.defaultTitle": "ProPlan SMART | EU Funding & Business Consulting",
+  "layout.description": "Expert EU funding consultancy specializing in project planning, grant applications, and business plans for associations and SMEs.",
   },
   hr_HR: {
     "url.home": "pocetna",
@@ -138,6 +140,8 @@ export const ui = {
     "footer.company.contact": "Kontakt",
     "footer.social": "Društvene mreže",
     "footer.description": "Najbolja agencija za pisanje EU projekata!",
-    "layout.description": "Agencija za pisanje EU projekata",
+    "layout.siteTitle": "ProPlan SMART",
+    "layout.defaultTitle": "ProPlan SMART | EU projekti i poslovno savjetovanje",
+    "layout.description": "Stručno EU savjetovanje specijalizirano za planiranje projekata, prijave na natječaje i poslovne planove za udruge i mala poduzeća.",
   },
 } as const;
